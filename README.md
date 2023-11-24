@@ -25,6 +25,24 @@ The AI-Assisted Tele-medicine Kiosk for Rural India is a innovative solution des
 - Limited availability of reliable internet connectivity in remote areas.
 - Potential challenges in integrating with existing healthcare systems and platforms.
 
+
+## Team Members
+### Team Leader: Sudhanshu Kumar
+Branch: Btech
+Stream: Computer Science and Engineering
+Year: III
+#### Team Member 1: Ankur Kumari
+Branch: Btech
+Stream: Computer Science and Engineering
+Year: III
+#### Team Member 2: Aniketa Das
+Branch: Btech
+Stream: Computer Science and Engineering
+Year: III
+#### Team Member 3: Aman Ujwal Toppo
+Branch: Btech
+Stream: Computer Science and Engineering
+Year: III
 ## License and Copyright
 
 Please refer to the provided license and copyright notice for further information.
