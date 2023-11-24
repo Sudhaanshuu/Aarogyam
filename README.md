@@ -1,4 +1,5 @@
 # AI-Assisted Tele-medicine Kiosk for Rural India
+link - https://nottsudhanshu.netlify.app/
 
 ## Introduction
 
