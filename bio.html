@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>AROGYAM - KIOSK</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-space-dynamic.css">
+    <!-- <link rel="stylesheet" href="assets/css/animated.css"> -->
+    <link rel="stylesheet" href="assets/css/biocss.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+</head>
+
+<body>
+
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <h4>Arogyam<span>-Kiosk</span></h4>
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="#about">About Us</a></li>
+                            <li class="scroll-to-section"><a href="#services">Our Models</a></li>
+                            <!-- <li class="scroll-to-section"><a href="#blog">Blog</a></li>  -->
+                            <li class="scroll-to-section"><a href="#contact">Message Us</a></li>
+                            <li class="scroll-to-section">
+                                <div class="main-red-button"><a href="#contact">Contact Now</a></div>
+                            </li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="bio-auth-container">
+            <img src="assets/images/bio-metric.jpg" alt="Biometric Authentication" class="bio-auth-image">
+            <p class="bio-auth-instructions">Place your thumb on the sensor to authenticate.</p>
+        </div>
+    </section>
+
+    <div id="language-popup" class="popup">
+        <div class="popup-content">
+            <h2>Select Language</h2>
+            <button id="choose-english">English</button>
+            <button id="choose-hindi">हिन्दी</button>
+        </div>
+    </div>
+
+
+
+    <div id="chatbot" class="chatbot">
+        <div id="chat-header" class="chat-header">
+            MEd Coders
+            <button id="close-button" class="close-button">&times;</button>
+        </div>
+        <div id="chat-content" class="chat-content">
+            <div class="message received">Hello! How can I help you?</div>
+        </div>
+        <div id="chat-input" class="chat-input">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
+
+
+
+    <!-- <div id="image-modal" class="modal">
+        <div class="box">
+            <h1>Welcome</h1>
+            <p>Click "Continue" to proceed with biometric authentication.</p>
+            <img src="assets/images/p1.jpg" alt="Welcome Image">
+            <button id="continue-button">Continue</button>
+            <span id="close-modal" class="close">&times;</span>
+        </div>
+    </div> -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
+                    <p>© Copyright 2023 Sudhanshu All Rights Reserved.
+
+                        <br>Design: <a rel="nofollow" href="https://sudhanshuuu.netlify.app/">Sudhanshu</a></p>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/imagesloaded.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/bot.js"></script>
+    <script src="assets/js/scriptForbio.js"></script>
+    <script src="assets/js/templatemo-custom.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Get references to HTML elements
+        const languagePopup = document.getElementById("language-popup");
+        const chooseEnglishButton = document.getElementById("choose-english");
+        const chooseHindiButton = document.getElementById("choose-hindi");
+
+        // Function to show the language popup
+        function showLanguagePopup() {
+            languagePopup.style.display = "flex";
+        }
+
+        // Function to hide the language popup
+        function hideLanguagePopup() {
+            languagePopup.style.display = "none";
+        }
+
+        // Event listeners for showing and hiding the popup
+        chooseEnglishButton.addEventListener("click", () => {
+            // Set language to English (perform your language change logic here)
+            // Example: document.documentElement.lang = "en";
+            hideLanguagePopup();
+        });
+
+        chooseHindiButton.addEventListener("click", () => {
+            // Set language to Hindi (perform your language change logic here)
+            // Example: document.documentElement.lang = "hi";
+            hideLanguagePopup();
+        });
+
+        // Show the language popup when the page loads
+        document.addEventListener("DOMContentLoaded", showLanguagePopup);
+
+        // Get references to HTML elements
+        const languageToggle = document.getElementById("language-toggle");
+        const contentElements = document.querySelectorAll(".translate");
+
+        // Function to change the language and update content
+        function changeLanguage(language) {
+            // Iterate over content elements and update text based on the selected language
+            contentElements.forEach(element => {
+                const key = element.getAttribute("data-translate-key");
+                if (translations[language] && translations[language][key]) {
+                    element.textContent = translations[language][key];
+                }
+            });
+        }
+
+        // Event listener for language toggle button/menu
+        languageToggle.addEventListener("click", () => {
+            // Toggle between English and Hindi
+            const currentLanguage = document.documentElement.lang;
+            const newLanguage = currentLanguage === "en" ? "hi" : "en";
+
+            // Change the language and update content
+            document.documentElement.lang = newLanguage;
+            changeLanguage(newLanguage);
+        });
+
+        // Set an initial language (e.g., English)
+        document.documentElement.lang = "en";
+        changeLanguage("en");
+
+        const translations = {
+            english: {
+                greeting: "Hello!",
+                about: "About Us",
+                contact: "Contact Us",
+                // ...
+            },
+            hindi: {
+                greeting: "नमस्ते!",
+                about: "हमारे बारे में",
+                contact: "हमसे संपर्क करें",
+                // ...
+            }
+        };
+    </script>
+    <!-- <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/898997e1-30b4-4de4-8bc6-9a61fbf9969e/webchat/config.js" defer></script> -->
+
+
+</body>
+
+</html>
