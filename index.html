@@ -280,27 +280,24 @@
     <!-- <div class="container" style="margin: 0px 0px; padding: 0px 0px"> -->
 
     <div id="container">
-        <div>
+        <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
+            <h2 class="text-center">Schedule a Meeting</h2>
+        </div>
+        <div id="scheduler" class="col-lg-12">
+            <label for="meetingName">Meeting Name:</label>
+            <input type="text" id="meetingName" placeholder="Enter meeting name">
 
-            <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                <h2 class="text-center">Schedule a Meeting</h2>
-            </div>
-            <div id="scheduler" class="col-lg-12">
-                <label for="meetingName">Meeting Name:</label>
-                <input type="text" id="meetingName" placeholder="Enter meeting name">
+            <label for="meetingTime">Meeting Time:</label>
+            <input type="datetime-local" id="meetingTime">
 
-                <label for="meetingTime">Meeting Time:</label>
-                <input type="datetime-local" id="meetingTime">
+            <button onclick="scheduleMeeting()">Schedule</button>
+        </div>
 
-                <button onclick="scheduleMeeting()">Schedule</button>
 
-            </div>
-
-            <div id="meetingList">
-                <h3>Upcoming Meetings</h3>
-                <br>
-                <!-- Meeting items will be displayed here -->
-            </div>
+        <div id="meetingList">
+            <h3>Upcoming Meetings</h3>
+            <br>
+            <!-- Meeting items will be displayed here -->
         </div>
     </div>
 
@@ -495,6 +492,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/schedule.js"></script>
     <!-- <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
     <script src="https://mediafiles.botpress.cloud/898997e1-30b4-4de4-8bc6-9a61fbf9969e/webchat/config.js" defer></script> -->
 

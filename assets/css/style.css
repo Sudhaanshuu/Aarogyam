@@ -289,6 +289,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: Poppins;
 }
 
 #scheduler {
@@ -300,11 +301,12 @@ body {
 
 #meetingList {
     margin-top: 20px;
+    padding: 20px;
 }
 
 .meeting-item {
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 30px;
     border: 1px solid #ddd;
     border-radius: 5px;
     background-color: #f9f9f9;
@@ -333,7 +335,7 @@ input {
 }
 
 button {
-    background-color: #4caf50;
+    background-color: #fe3f40;
     color: #fff;
     border: none;
     padding: 10px;
@@ -341,9 +343,10 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+
+/* button:hover {
     background-color: #45a049;
-}
+} */
 
 @media (max-width: 600px) {
     #container {
