@@ -267,17 +267,43 @@
             </div>
         </div>
     </div>
-    <!-- <section class="Su" style="display: flex; justify-content: center; align-items: center; height: 20vh;">
+    <section class="Su" style="display: flex; justify-content: center; align-items: center; height: 20vh;">
         <div class="main-red-button">
             <a href="https://mldiseasepredict.streamlit.app/">Check Your Health</a>
         </div>
-    </section> -->
-
-    <section class="Su">
-        <iframe src="http://localhost:8501" class="Su"></iframe>
     </section>
 
+    <!-- <section class="Su">
+        <iframe src="http://localhost:8501" class="Su"></iframe>
+    </section> -->
+
     <!-- <div class="container" style="margin: 0px 0px; padding: 0px 0px"> -->
+
+    <div id="container">
+        <div>
+
+            <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                <h2 class="text-center">Schedule a Meeting</h2>
+            </div>
+            <div id="scheduler" class="col-lg-12">
+                <label for="meetingName">Meeting Name:</label>
+                <input type="text" id="meetingName" placeholder="Enter meeting name">
+
+                <label for="meetingTime">Meeting Time:</label>
+                <input type="datetime-local" id="meetingTime">
+
+                <button onclick="scheduleMeeting()">Schedule</button>
+
+            </div>
+
+            <div id="meetingList">
+                <h3>Upcoming Meetings</h3>
+                <br>
+                <!-- Meeting items will be displayed here -->
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <div class="row">
             <div class="col-lg-6 offset-lg-3">
