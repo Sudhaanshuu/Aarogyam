@@ -436,6 +436,44 @@ body {
     }
 }
 
+.Su {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Su .main-red-button {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.main-red-button a {
+    color: #fff;
+    text-decoration: none;
+}
+
 
 /* schedules appointments */
 
@@ -446,7 +484,7 @@ body {
     overflow: hidden;
     width: 100%;
     max-width: 400px;
-    margin: 0 auto;
+    margin: 20px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
