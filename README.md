@@ -1,5 +1,5 @@
 # AI-Assisted Tele-medicine Kiosk for Rural India
-link - https://nottsudhanshu.netlify.app/
+link - https://arogyam-kiosk.netlify.app/
 
 ## Introduction
 
