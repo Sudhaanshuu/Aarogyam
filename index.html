@@ -42,7 +42,7 @@
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                            <li class="scroll-to-section"><a href="HTML/lobby.html">Video Call</a></li>
+                            <li class="scroll-to-section"><a href="https://nottsudhanshu.netlify.app/lobby.html">Video Call</a></li>
                             <li class="scroll-to-section"><a href="#about">About Us</a></li>
                             <li class="scroll-to-section"><a href="#services">Our Models</a></li>
                             <!-- <li class="scroll-to-section"><a href="#blog">Blog</a></li>  -->
@@ -199,11 +199,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
-
-                    <div class="main-red-button" style="display: flex; justify-content: center; align-items: center;">
-                        <a href="HTML/bio.html" target="_blank">A.I Assistant</a>
-                    </div>
-
                     <div class="section-heading  wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
                         <h2>See What Our Model <em>Offers</em> &amp; What We <span>Provide</span></h2>
                     </div>
@@ -267,15 +262,17 @@
             </div>
         </div>
     </div>
-    <section class="Su" style="display: flex; justify-content: center; align-items: center; height: 20vh;">
+    <!-- <section class="Su" style="display: flex; justify-content: center; align-items: center; height: 20vh;">
         <div class="main-red-button">
             <a href="https://mldiseasepredict.streamlit.app/">Check Your Health</a>
         </div>
-    </section>
-
-    <!-- <section class="Su">
-        <iframe src="http://localhost:8501" class="Su"></iframe>
     </section> -->
+
+    <section class="Su" style="padding: 20px;">
+        <br>
+        <br>
+        <iframe src="http://localhost:8501" class="Su"></iframe>
+    </section>
 
     <!-- <div class="container" style="margin: 0px 0px; padding: 0px 0px"> -->
 
@@ -301,35 +298,75 @@
         </div>
     </div>
 
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-6 offset-lg-3">
+
+                <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
+
+                    <h2 class="text-center">News and Currently Active Diseases</h2>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="row">
+
+
+            <div class="slider-container">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="assets/images/eyeflu.jpg" alt="Slide 1">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/images/allergy.jpg" alt="Slide 2">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/images/smallpox.jpg" alt="Slide 3">
+                    </div>
+                </div>
+
+                <!-- Navigation Arrows (Optional) -->
+                <div class="prev">&#10094;</div>
+                <div class="next">&#10095;</div>
+            </div>
+        </div>
+    </div>
+
     <!-- Docter Contact/Ask Question -->
     <section id="#contact" class="contact">
         <div class="container">
-
-            <div class="section-title" data-aos="fade-up">
-                <h2>Login</h2>
-                <p>Login to your account.</p>
+            <div class="row" style="padding: 10px;">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <h2 class="text-center">Login to your Account</h2>
+                    </div>
+                </div>
             </div>
 
-            <div class="col-lg-12 mt-5 mt-lg-0 d-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-delay="200">
-                <form action="#" method="post" role="form" class="php-email-form">
-                    <div class="form-group">
-                        <label for="username">Username</label>
-                        <input type="text" name="username" class="form-control" id="username" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                        <div class="validate"></div>
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" class="form-control" name="password" id="password" data-rule="minlen:6" data-msg="Please enter at least 6 characters" />
-                        <div class="validate"></div>
-                    </div>
-                    <div class="mb-3">
-                        <div class="loading">Loading</div>
-                        <div class="error-message"></div>
-                    </div>
-                    <div class="text-center"><button type="submit">Login</button></div>
-                </form>
+            <div class="row">
+                <div class="col-lg-12 mt-5 mt-lg-0 d-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                    <form action="#" method="post" role="form" class="php-email-form">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" name="username" class="form-control" id="username" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                            <div class="validate"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" name="password" id="password" data-rule="minlen:6" data-msg="Please enter at least 6 characters" />
+                            <div class="validate"></div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="text-center"><button type="submit">Login</button></div>
+                    </form>
+                </div>
             </div>
-
         </div>
     </section>
 
@@ -338,7 +375,7 @@
     <!-- Biometric authentication -->
     <section>
         <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-            <h2 class="text-center">Biometric authentication</h2>
+            <h2 class="text-center" style="padding: 10px;">Biometric authentication</h2>
         </div>
         <div id="bio" class="bio-auth-container">
             <img src="assets/images/bio-metric.jpg" alt="Biometric Authentication" class="bio-auth-image">
@@ -475,6 +512,7 @@
     <script src="assets/js/imagesloaded.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/bot.js"></script>
+    <script src="assets/js/slider.js"></script>
     <script src="assets/js/scriptForbio.js"></script>
     <script src="assets/js/templatemo-custom.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
