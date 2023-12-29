@@ -22,6 +22,14 @@ The AI-Assisted Tele-medicine Kiosk for Rural India is a innovative solution des
 4. Load the initial medical records and settings into the kiosk.
 5. Make the kiosk accessible to users and monitor its usage.
 
+## Run these command 
+1. pip install numpy==1.23.5
+2. pip install pandas==1.5.1
+3. pip install scikit-learn==1.3.2
+4. pip install streamlit==1.16.0
+5. pip install streamlit_option_menu==0.3.2
+
+
 ## Known Limitations
 - Limited availability of reliable internet connectivity in remote areas.
 - Potential challenges in integrating with existing healthcare systems and platforms.
