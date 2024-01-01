@@ -761,3 +761,46 @@ button {
     opacity: 1;
     transform: translateY(0);
 }
+
+.sponsored {
+    padding: 50px 0;
+    background: #ffffff;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.brands {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand img {
+    max-width: 160px;
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+
+.brand:hover img {
+    filter: grayscale(0);
+}
+
+@media (max-width: 767px) {
+    .brands {
+        flex-direction: column;
+        align-items: center;
+    }
+    .brand {
+        width: 70%;
+        margin: 10px 0;
+    }
+}
