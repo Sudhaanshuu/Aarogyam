@@ -418,6 +418,10 @@ body {
     background: #fe3f40;
 }
 
+.info button {
+    margin-bottom: 20px;
+}
+
 @-webkit-keyframes animate-loading {
     0% {
         transform: rotate(0deg);
