@@ -495,6 +495,29 @@
         </div>
     </section>
 
+    <section class="doctors">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Top Doctors</h2>
+                <p>Find the best doctors in your city</p>
+            </div>
+
+            <div class="info">
+
+                <input type="text" id="city" placeholder="Enter city">
+
+                <button onclick="showDoctors()">Search</button>
+
+                <div id="doctorsList"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
 
     <!-- Biometric authentication -->
     <section>
@@ -581,6 +604,9 @@
                         </div>
                     </div>
                 </div>
+
+
+
                 <div class="col-lg-6 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s">
                     <form id="contact" action="https://formspree.io/f/moqowyjq" method="POST">
                         <div class="row">
@@ -677,6 +703,7 @@
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="script.js"></script>
     <script src="Extra/js/searchDoc.js"></script>
+    <script src="Extra/js/bestDoc.js"></script>
 
 
 
