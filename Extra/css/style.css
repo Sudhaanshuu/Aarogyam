@@ -528,12 +528,12 @@ section {
 
 .team {
     background: #fff;
-    padding: 60px 0;
+    /* padding: 60px 0; */
 }
 
 .team .member {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     background: #343a40;
     position: relative;
     overflow: hidden;

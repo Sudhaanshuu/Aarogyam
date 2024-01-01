@@ -1,4 +1,4 @@
-.slider-container {
+.slider-sudha {
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -20,8 +20,8 @@
 
 /* Responsive Images */
 
-img {
-    width: 100%;
+.slide img {
+    width: 900px;
     height: 100%;
 }
 
