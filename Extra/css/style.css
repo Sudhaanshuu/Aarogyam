@@ -707,3 +707,8 @@ button {
         transform: scale(1);
     }
 }
+
+#map {
+    width: 100%;
+    height: 290px;
+}
