@@ -15,7 +15,9 @@
     <title>AROGYAM - KIOSK</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <link href="Extra/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 
@@ -457,7 +459,35 @@
 
         </div>
     </section>
+    <!-- Search Doc -->
+    <section id="doctorLocator" class="contact">
 
+        <div class="container">
+
+            <div class="d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="info">
+
+                    <label for="cityInput">Enter City</label>
+                    <input type="text" id="cityInput" placeholder="Type city name">
+
+                    <button onclick="searchDoctors()">Search Doctors</button>
+
+                    <div class="address">
+                        <i class="icofont-google-map"></i>
+                        <h4>Location:</h4>
+                        <p id="locationInfo">Bhubaneswar, Odisha</p>
+                    </div>
+
+                    <div class="map" id="map"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
 
 
     <!-- Biometric authentication -->
@@ -579,6 +609,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="Extra/js/schedule.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+    <script src="Extra/js/searchDoc.js"></script>
+
 
 
 
