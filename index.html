@@ -385,12 +385,15 @@
                 <button onclick="showDoctors()">Search</button>
 
                 <div id="doctorsList"></div>
-
             </div>
-
         </div>
-
     </section>
+
+
+
+
+
+
     <!-- Ask to Doctor  -->
     <section id="#contact" class="contact">
 
@@ -442,6 +445,41 @@
         </div>
     </section>
 
+    <!-- Review -->
+
+    <section class="doctors">
+
+        <div class="section-title">
+            <h2>Reviews</h2>
+            <p>Your Rating and Views</p>
+        </div>
+
+        <div class="info">
+
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+
+                <label for="review">Review:</label>
+                <textarea id="review"></textarea>
+
+                <label for="rating">Rating (1-5):</label>
+                <input type="number" id="rating" min="1" max="5">
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <div class="reviews">
+                <div class="review">
+                    <h3>John D. - <span>5 stars</span></h3>
+                    <p>Dr. James is very knowledgeable and takes the time to explain things clearly. Highly recommended.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
 
 
     <!-- Login form -->
@@ -486,8 +524,8 @@
     <!-- Biometric authentication -->
     <section>
         <div class="section-title">
-            <h2>Top Doctors</h2>
-            <p>Find the best doctors in your city</p>
+            <h2>Bio-metric</h2>
+            <p>Use Bio-metric for access</p>
         </div>>
         <div id="bio" class="bio-auth-container">
             <img src="Extra/images/bio-metric.jpg" alt="Biometric Authentication" class="bio-auth-image">
@@ -501,7 +539,10 @@
 
         <div class="container">
 
-            <h2 class="heading">Sponsored Brands</h2>
+            <div class="section-title">
+                <h2>Sponsored</h2>
+                <p>List of Brands we Sponsore</p>
+            </div>>
 
             <div class="brand-cards">
 
@@ -527,13 +568,8 @@
                         <p>Detail about brand 2</p>
                     </div>
                 </div>
-
-                <!-- Other Cards -->
-
             </div>
-
         </div>
-
     </section>
 
 
@@ -720,6 +756,7 @@
     <script src="script.js"></script>
     <script src="Extra/js/searchDoc.js"></script>
     <script src="Extra/js/bestDoc.js"></script>
+    <script src="Extra/js/DocReview.js"></script>
 
 
 
