@@ -635,29 +635,75 @@ section {
     font-family: Poppins;
 }
 
-#scheduler {
-    margin: 20px;
-    padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
+
+/* Theme Styling */
+
+#meeting {
+    background-color: #fff;
+    padding: 30px 0;
 }
 
-#meetingList {
-    margin-top: 20px;
-    padding: 20px;
+.section-title {
+    text-align: center;
 }
+
+.section-title h2 {
+    font-size: 32px;
+    color: #fe3f40;
+}
+
+.info {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 2px solid #fe3f40;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px #ddd;
+}
+
+
+/* Form Styling */
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input,
+form select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #fe3f40;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Meetings Section */
 
 .meeting-item {
-    margin-bottom: 10px;
-    padding: 30px;
     border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    transition: background-color 0.3s ease;
+    padding: 20px;
+    border-radius: 4px;
 }
 
-.meeting-item:hover {
-    background-color: #e5e5e5;
+
+/* Responsive */
+
+@media (max-width: 700px) {
+    form {
+        grid-template-columns: 1fr;
+    }
 }
 
 img {
@@ -891,9 +937,30 @@ form button {
     padding: 10px 20px;
 }
 
-#insuranceComparison {
-    background-color: #fff;
-    padding: 30px 0;
+
+/* Same CSS as before */
+
+#quotes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.quote {
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+#best {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #eaf8e6;
+    border: 1px solid #badbcc;
+}
+
+#loginSection {
+    padding: 20px 0;
+    background: #fff;
 }
 
 .section-title {
@@ -901,24 +968,66 @@ form button {
 }
 
 .section-title h2 {
-    font-size: 32px;
     color: #fe3f40;
+    font-size: 32px;
 }
 
-.info {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #fff;
+.login-form {
+    max-width: 480px;
+    margin: 20px auto;
     border: 2px solid #fe3f40;
     padding: 30px;
     border-radius: 4px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-.insuranceCard {
-    background-color: #fff;
-    border: 2px solid #ccc;
-    padding: 20px;
-    margin: 10px;
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.form-group input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button[type="submit"] {
+    display: block;
+    background: #fe3f40;
+    border: 0;
+    color: #fff;
+    border-radius: 4px;
+    padding: 8px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.auth-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#loginSection,
+#bioAuth {
+    width: calc(50% - 10px);
+}
+
+@media (max-width: 768px) {
+    .auth-container {
+        flex-direction: column;
+    }
+    #loginSection,
+    #bioAuth {
+        width: 100%;
+    }
+}
+
+.bioAuth {
+    max-width: 480px;
+    margin: 20px auto;
+    border: 2px solid #fe3f40;
+    padding: 30px;
+    border-radius: 4px;
 }
