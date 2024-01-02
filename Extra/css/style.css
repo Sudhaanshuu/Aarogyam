@@ -1031,3 +1031,11 @@ button[type="submit"] {
     padding: 30px;
     border-radius: 4px;
 }
+
+.bio-auth-image {
+    max-width: 480px;
+    margin: 20px auto;
+    border: 2px solid #fe3f40;
+    padding: 30px;
+    border-radius: 4px;
+}
