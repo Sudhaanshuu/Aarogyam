@@ -1,94 +1,97 @@
-/* Your existing styles for larger screens */
-
 .right-image {
     float: right;
     margin-right: 20px;
-    /* Add other styles as needed */
 }
-
-
-/* Media query for screens up to 767px (typical phone size) */
 
 @media only screen and (max-width: 767px) {
     .right-image {
         display: none;
-        /* Hide the image for smaller screens */
     }
 }
 
-
-/* Container styles */
-
 #about {
     background-color: #f8f9fa;
-    /* Set your desired background color */
     padding: 80px 0;
-    /* Adjust padding as needed */
 }
-
-
-/* Left image styles */
 
 .left-image img {
     width: 100%;
-    /* Make the image responsive */
     display: block;
 }
 
-
-/* Services section styles */
-
 .services {
     margin-top: 30px;
-    /* Adjust margin as needed */
 }
-
-
-/* Service item styles */
 
 .item {
     margin-bottom: 30px;
-    /* Adjust margin as needed */
 }
-
-
-/* Icon styles */
 
 .icon img {
     width: 60px;
-    /* Set your desired icon size */
     height: auto;
 }
 
-
-/* Right text styles */
-
 .right-text h4 {
     color: #007bff;
-    /* Set your desired text color */
     margin-bottom: 10px;
-    /* Adjust margin as needed */
 }
 
 .right-text p {
     color: #495057;
-    /* Set your desired text color */
 }
-
-
-/* Responsive adjustments */
 
 @media only screen and (max-width: 767px) {
     .col-lg-4 {
         margin-bottom: 20px;
-        /* Adjust margin for smaller screens */
     }
     .col-lg-8 {
         text-align: center;
-        /* Center content on smaller screens */
     }
     .left-image {
         margin-bottom: 20px;
-        /* Adjust margin for smaller screens */
+    }
+}
+
+.Supicforwebsite {
+    position: relative;
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.main-red-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.main-red-button a {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 767px) {
+    .main-red-button {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        text-align: center;
+    }
+    .main-red-button a {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
     }
 }
