@@ -281,32 +281,56 @@
 
     <!-- <div class="container" style="margin: 0px 0px; padding: 0px 0px"> -->
 
-    <div id="container">
-        <div class="section-title" data-aos="fade-up" style="padding-top: 30px; margin-bottom: 0px;">
-            <p>Schedule a Meeting</p>
-        </div>
-        <div id="scheduler" class="col-lg-12">
-            <label for="meetingName">Meeting Name:</label>
-            <input type="text" id="meetingName" placeholder="Enter meeting name">
 
-            <label for="meetingName">Choose Meeting ID:</label>
-            <input type="text" id="meetingId" placeholder="Create a 3 digit Id">
+    <!-- Book an Appointment. -->
+    <section id="meeting">
 
-            <label for="meetingTime">Meeting Time:</label>
-            <input type="datetime-local" id="meetingTime">
-
-            <button onclick="scheduleMeeting()">Schedule</button>
+        <div class="section-title">
+            <h2>Meeting</h2>
+            <p>Book an Appointment</p>
         </div>
 
+        <div class="info">
 
-        <div id="meetingList">
-            <h3>Upcoming Meetings</h3>
+            <form>
+                <label for="meetingName">Meeting Name:</label>
+                <input type="text" id="meetingName">
 
+                <label for="meetingId">Meeting ID:</label>
+                <input type="number" id="meetingId">
 
-            <br>
-            <!--  displayed here -->
+                <label for="meetingDate">Date:</label>
+                <input type="date" id="meetingDate">
+
+                <label for="meetingTime">Time:</label>
+                <input type="time" id="meetingTime">
+
+                <label for="duration">Duration:</label>
+                <select id="duration">
+              <option value="30">30 Minutes</option>
+              <option value="60">60 Minutes</option>
+            </select>
+
+                <label for="attendees">Attendees Emails:</label>
+                <input type="text" id="attendees" placeholder="Separate emails with commas">
+
+                <input type="submit" value="Schedule Meeting">
+            </form>
+
+            <div id="upcoming-meetings">
+
+                <h3>Upcoming Meetings</h3>
+
+                <div class="meetings-container">
+                    <!-- Upcoming meetings loaded here -->
+                </div>
+
+            </div>
+
         </div>
-    </div>
+
+    </section>
+
     <!-- Slider -->
     <div class="slider-container">
         <div class="section-title">
@@ -380,7 +404,7 @@
     </section>
 
     <!-- Health Insurance -->
-    <section id="insuranceComparison">
+    <section id="insuranceComparison" style="margin-bottom: 30px;">
 
         <div class="section-title">
             <h2>Insurance</h2>
@@ -480,56 +504,41 @@
 
 
     <!-- Login form -->
-    <section id="#contact" class="contact" style="margin-bottom: 30px;">
-        <div class="container">
-            <div class="row" style="padding: 10px;">
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="section-title" data-aos="fade-up">
-                        <h2 style="margin-top: 20px;">Account</h2>
-                        <p>Login Your Account </p>
-                    </div>
-                </div>
-            </div>
+    <!-- Biometric authentication -->
 
-            <div class="row">
-                <div class="col-lg-12 mt-5 mt-lg-0 d-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-delay="200">
-                    <form action="#" method="post" role="form" class="php-email-form">
+    <div>
+
+        <div class="section-title">
+            <h2>Reviews</h2>
+            <p>Your Rating and Views</p>
+        </div>
+        <div class="auth-container">
+
+            <div id="loginSection">
+                <div class="login-form">
+                    <form>
                         <div class="form-group">
-                            <label for="username">Username</label>
-                            <input type="text" name="username" class="form-control" id="username" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                            <div class="validate"></div>
+                            <label>Username</label>
+                            <input type="text" id="username">
                         </div>
                         <div class="form-group">
-                            <label for="password">Password</label>
-                            <input type="password" class="form-control" name="password" id="password" data-rule="minlen:6" data-msg="Please enter at least 6 characters" />
-                            <div class="validate"></div>
+                            <label>Password</label>
+                            <input type="password" id="password">
                         </div>
-                        <div class="mb-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                        </div>
-                        <div class="text-center"><button type="submit">Login</button></div>
+                        <button type="submit">Login</button>
                     </form>
                 </div>
             </div>
+
+            <div id="bioAuth">
+                <div id="bio" class="bio-auth-container">
+                    <img src="Extra/images/bio-metric.jpg" alt="Biometric Authentication" class="bio-auth-image">
+                    <p class="bio-auth-instructions">Place your thumb on the sensor to authenticate.</p>
+                </div>
+            </div>
         </div>
-    </section>
 
-
-
-
-    <!-- Biometric authentication -->
-    <section>
-        <div class="section-title">
-            <h2>Bio-metric</h2>
-            <p>Use Bio-metric for access</p>
-        </div>>
-        <div id="bio" class="bio-auth-container">
-            <img src="Extra/images/bio-metric.jpg" alt="Biometric Authentication" class="bio-auth-image">
-            <p class="bio-auth-instructions">Place your thumb on the sensor to authenticate.</p>
-        </div>
-    </section>
-
+    </div>
     <!-- Brand Sponsored -->
 
     <section class="sponsored">
@@ -709,7 +718,7 @@
 
     <div id="chatbot" class="chatbot">
         <div id="chat-header" class="chat-header">
-            MEd Coders
+            Green Coders
             <button id="close-button" class="close-button">&times;</button>
         </div>
         <div id="chat-content" class="chat-content">
