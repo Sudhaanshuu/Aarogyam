@@ -1,5 +1,4 @@
 function searchDoctors() {
-
     const cityInput = document.getElementById("cityInput").value;
 
     let doctorLocations;
@@ -17,7 +16,21 @@ function searchDoctors() {
             { name: "Clinic Z", lat: 19.3, lng: 72.3 }
         ];
     } else {
-        doctorLocations = [];
+        alert(`Your city (${cityInput}) is not updated. You can check India's top 5 hospitals and filter data from this list.`);
+
+        const hospitals = [
+            { name: "Guru Kirpa", lat: 31.096134, lng: 75.778770 },
+            { name: "Ruby Hall Clinic", lat: 18.485870, lng: 73.905853 },
+            { name: "Fortis Memorial Research Institute", lat: 28.456789, lng: 77.072472 },
+            { name: "Ahmedabad Civil Hospital", lat: 23.053968, lng: 72.603844 }
+        ];
+
+        const randomHospital1 = hospitals[Math.floor(Math.random() * hospitals.length)].name;
+        const randomHospital2 = hospitals[Math.floor(Math.random() * hospitals.length)].name;
+
+        console.log(`Random Hospitals: ${randomHospital1} and ${randomHospital2}`);
+
+        return;
     }
 
     const locationInfo = document.getElementById("locationInfo");
@@ -46,5 +59,4 @@ function searchDoctors() {
     } else {
         alert("No locations found");
     }
-
 }
