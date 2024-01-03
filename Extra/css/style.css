@@ -93,6 +93,9 @@ body {
     background: linear-gradient(45deg, #2ecc71, #27ae60);
 }
 
+
+/* Bot */
+
 .chatbot {
     position: fixed;
     bottom: 20px;
@@ -174,22 +177,15 @@ body {
     margin-left: 10px;
 }
 
-.chat-header {
-    background: #fe3f40;
-    color: #fff;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.close-button {
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 20px;
+.bot-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #fe3f40;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: none;
     cursor: pointer;
 }
 
@@ -219,6 +215,9 @@ body {
     cursor: pointer;
 }
 
+
+/* Additional styles for the chatbot when it's expanded  */
+
 #chatbot.expanded {
     width: 300px;
     height: auto;
@@ -236,18 +235,6 @@ body {
     align-items: center;
     padding: 10px;
     border-top: 1px solid #ccc;
-}
-
-.bot-icon {
-    width: 40px;
-    height: 40px;
-    background-color: #fe3f40;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    cursor: pointer;
 }
 
 
@@ -335,7 +322,12 @@ body {
 }
 
 .contact .php-email-form .form-group {
-    padding-bottom: 8px;
+    padding: 8px 8px;
+}
+
+.form-group,
+.button {
+    padding: 8px 18px;
 }
 
 .contact .php-email-form .validate {
@@ -538,8 +530,13 @@ section {
 
 /* Team members */
 
+.team .container {
+    width: 800px;
+    height: 300px;
+}
+
 .team .member img {
-    max-width: 71.5%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -899,7 +896,7 @@ form button {
     max-width: 480px;
     margin: 20px auto;
     border: 2px solid #fe3f40;
-    padding: 30px;
+    padding: 8px 18px;
     border-radius: 4px;
 }
 
@@ -928,6 +925,7 @@ button[type="submit"] {
 }
 
 .auth-container {
+    padding: 10px 10px;
     display: flex;
     justify-content: space-between;
 }
@@ -970,8 +968,8 @@ button[type="submit"] {
 }
 
 .company-logos img {
-    height: 80px;
-    opacity: 0.5;
+    width: 100%;
+    opacity: 0.8;
     transition: 0.3s;
     margin: 0 10px;
 }
