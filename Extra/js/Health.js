@@ -2,12 +2,10 @@
 
 
 const plans = [
-    // plan data
 
     { name: 'Basic', coverage: 'Comprehensive coverage', cost: '$100/month' },
     { name: 'Basic Plus', coverage: 'Basic coverage', cost: '$75/month' },
-    { name: 'Primeum', coverage: 'Specialized coverage', cost: '$120/month' },
-    // Add more plans as needed
+    { name: 'Primeum', coverage: 'Specialized coverage', cost: '$120/month' }
 
 ];
 
