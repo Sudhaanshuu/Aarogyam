@@ -4,16 +4,13 @@ const sendButton = document.getElementById("send-button");
 const userInputElement = document.getElementById("user-input");
 const chatContent = document.getElementById("chat-content");
 
-// Function to toggle the chatbot's size
 function toggleChatbotSize() {
     chatbot.classList.toggle("small");
 }
 
-// Event listener for clicking the close button
 closeButton.addEventListener("click", toggleChatbotSize);
 
 
-// Function to add a user message to the chat
 function addUserMessage(message) {
     const userMessage = document.createElement("div");
     userMessage.textContent = message;
@@ -22,34 +19,28 @@ function addUserMessage(message) {
     userInputElement.value = "";
 }
 
-// Function to add a chatbot message to the chat
 function addChatbotMessage(message) {
     const chatbotMessage = document.createElement("div");
     chatbotMessage.textContent = message;
     chatbotMessage.classList.add("message", "received");
     chatContent.appendChild(chatbotMessage);
 
-    // Speak the chatbot's message
     const speech = new SpeechSynthesisUtterance(message);
     speechSynthesis.speak(speech);
 }
 
-// Toggle the chatbot on and off
 function toggleChatbot() {
     chatbot.classList.toggle("active");
 }
 
-// Close the chatbot
 closeButton.addEventListener("click", toggleChatbot);
 
-// Handle user input
 sendButton.addEventListener("click", () => {
     const userMessage = userInputElement.value;
     if (userMessage.trim() === "") return;
 
     addUserMessage(userMessage);
 
-    // Process user input and provide responses
     let response = "Hi, I'm Green Coders, an AI assistant.";
 
     switch (userMessage.toLowerCase()) {
@@ -71,7 +62,6 @@ sendButton.addEventListener("click", () => {
         case "mera naam":
             response = "mera naam Green Coders hai";
             break;
-            // Add more test cases and responses here
         case "i love you":
             response = "I love you too.";
             break;
@@ -97,9 +87,7 @@ sendButton.addEventListener("click", () => {
             response = "Effective stress-reduction techniques include deep breathing exercises, meditation, regular exercise, and spending time in nature.";
             break;
 
-            // Add more test cases and responses here
         default:
-            // If the user's input doesn't match any specific case, use the default response.
             response = "I'm sorry, I didn't understand that. How can I assist you?";
             break;
     }
@@ -107,6 +95,5 @@ sendButton.addEventListener("click", () => {
     addChatbotMessage(response);
 });
 
-// Show/hide the chatbot
-chatbot.style.display = "block"; // Initially show the chatbot
-toggleChatbot(); // Hide the chatbot when the page loads
+chatbot.style.display = "block";
+toggleChatbot();
