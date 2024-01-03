@@ -974,3 +974,33 @@ button[type="submit"] {
 .company-logos .owl-dot.active {
     background-color: #fe3f40 !important;
 }
+
+.image-section {
+    margin-bottom: 45px;
+}
+
+.image-section img {
+    width: 100%;
+    border: 2px solid #fe3f40;
+    transition: transform .2s;
+}
+
+.image-section .row:nth-child(2) img:hover {
+    transform: scale(1.1);
+}
+
+.image-section .row:first-child {
+    text-align: center;
+}
+
+.image-section .row:first-child img {
+    max-width: 70%;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
