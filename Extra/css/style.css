@@ -436,6 +436,25 @@ body {
 
 .Su {
     position: relative;
+    text-align: center;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Media query for screens smaller than 768px */
+
+@media (max-width: 768px) {
+    .Su .main-red-button {
+        font-size: 16px;
+    }
+}
+
+.Su {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -519,16 +538,9 @@ section {
 
 /* Team members */
 
-.team {
-    background: #fff;
-}
-
-.team .member {
-    text-align: center;
-    margin-bottom: 0px;
-    background: #343a40;
-    position: relative;
-    overflow: hidden;
+.team .member img {
+    max-width: 71.5%;
+    height: auto;
 }
 
 .team .member .member-info {
@@ -539,6 +551,18 @@ section {
     left: 0;
     right: 0;
     transition: 0.2s;
+}
+
+.team {
+    background: #fff;
+}
+
+.team .member {
+    text-align: center;
+    margin-bottom: 0px;
+    background: #343a40;
+    position: relative;
+    overflow: hidden;
 }
 
 .team .member .member-info-content {
@@ -986,7 +1010,7 @@ button[type="submit"] {
 }
 
 .image-section .row:nth-child(2) img:hover {
-    transform: scale(1.1);
+    transform: scale(1.5);
 }
 
 .image-section .row:first-child {
