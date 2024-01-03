@@ -543,7 +543,7 @@
                         <div class="member-info">
                             <div class="member-info-content">
                                 <h4>Sudhanshu Kumar</h4>
-                                <span>Student, Coder, Graphic Designer</span>
+                                <span>Student, Coder, Designer</span>
                             </div>
                             <div class="social">
                                 <a href="https://twitter.com/Misudhanshuu"><i class="icofont-twitter"></i></a>
@@ -600,35 +600,31 @@
     <!-- Login form -->
     <!-- Biometric authentication -->
 
-    <div style="margin-top: 40px;">
+    <div class="section-title" style="margin-top: 80px;">
+        <h2>Login</h2>
+        <p>Login Your Account</p>
+    </div>
 
-        <div class="section-title">
-            <h2>Login</h2>
-            <p>Login Your Account</p>
+    <div class="auth-container">
+
+        <div id="loginSection" class="login-form" style="padding:8px 18px;">
+            <form>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password">
+                </div>
+                <button type="submit">Login</button>
+            </form>
         </div>
-        <div class="auth-container">
 
-            <div id="loginSection">
-                <div class="login-form">
-                    <form>
-                        <div class="form-group">
-                            <label>Username</label>
-                            <input type="text" id="username">
-                        </div>
-                        <div class="form-group">
-                            <label>Password</label>
-                            <input type="password" id="password">
-                        </div>
-                        <button type="submit">Login</button>
-                    </form>
-                </div>
-            </div>
-
-            <div id="bioAuth">
-                <div id="bio" class="bio-auth-container">
-                    <img src="Extra/images/bio-metric.jpg" alt="Biometric Authentication" class="bio-auth-image">
-                    <p class="bio-auth-instructions">Place your thumb on the sensor to authenticate.</p>
-                </div>
+        <div id="bioAuth">
+            <div id="bio" class="bio-auth-container">
+                <img src="Extra/images/bio-metric.jpg" alt="Biometric Authentication" class="bio-auth-image">
+                <p class="bio-auth-instructions">Place your thumb on the sensor to authenticate.</p>
             </div>
         </div>
 
@@ -644,10 +640,9 @@
             </div>
 
             <div class="company-logos" data-aos="fade-up" data-aos-delay="100">
-                <img src="Extra/images/clients/client-1.png" alt="">
                 <img src="Extra/images/clients/client-2.png" alt="">
+                <img src="Extra/images/clients/client-1.png" alt="">
                 <img src="Extra/images/clients/client-3.png" alt="">
-                <img src="Extra/images/clients/client-4.png" alt="">
 
                 <br>
             </div>
@@ -721,19 +716,22 @@
     </div> -->
 
 
+    <!--  Bot-->
     <div id="chatbot" class="chatbot">
         <div id="chat-header" class="chat-header">
             Green Coders
             <button id="close-button" class="close-button">&times;</button>
         </div>
         <div id="chat-content" class="chat-content">
-            <div class="message received">Hello! How can I help you?</div>
+            <!-- Messages will be displayed here -->
         </div>
         <div id="chat-input" class="chat-input">
             <input type="text" id="user-input" placeholder="Type your message...">
             <button id="send-button">Send</button>
+            <button id="mic-button">🎤</button>
         </div>
     </div>
+
     <footer>
         <div class="container">
             <div class="row">
