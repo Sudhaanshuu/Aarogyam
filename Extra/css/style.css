@@ -105,7 +105,6 @@ body {
     display: none;
     flex-direction: column;
     z-index: 9999;
-    /* Set a high z-index value */
 }
 
 .chat-header {
@@ -220,9 +219,6 @@ body {
     cursor: pointer;
 }
 
-
-/* Additional styles for the chatbot when it's expanded  */
-
 #chatbot.expanded {
     width: 300px;
     height: auto;
@@ -264,10 +260,8 @@ body {
 
 .bio-auth-image {
     width: 200px;
-    /* Adjust the size as needed */
     height: auto;
     animation: pulse 2s infinite;
-    /* Add a pulsating animation */
 }
 
 .bio-auth-instructions {
@@ -452,7 +446,6 @@ body {
 .background-image {
     width: 100%;
     height: 100%;
-    /* object-fit: cover; */
     position: absolute;
     top: 0;
     left: 0;
@@ -528,7 +521,6 @@ section {
 
 .team {
     background: #fff;
-    /* padding: 60px 0; */
 }
 
 .team .member {
@@ -537,10 +529,6 @@ section {
     background: #343a40;
     position: relative;
     overflow: hidden;
-    /* min-width: 25rem;
-    min-height: 25rem;
-    max-width: 125rem;
-    max-height: 125rem; */
 }
 
 .team .member .member-info {
@@ -732,11 +720,6 @@ button {
     cursor: pointer;
 }
 
-
-/* button:hover {
-    background-color: #45a049;
-} */
-
 @media (max-width: 600px) {
     #container {
         border-radius: 0;
@@ -765,7 +748,6 @@ button {
 
 .doctors {
     background-color: #ffffff;
-    /* background-color: #fdf1ec; */
     padding: 30px 0;
 }
 
@@ -965,11 +947,9 @@ button[type="submit"] {
 
 .company-logos img {
     height: 80px;
-    /* Adjust the height of the logos as needed */
     opacity: 0.5;
     transition: 0.3s;
     margin: 0 10px;
-    /* Adjust the spacing between logos */
 }
 
 .company-logos img:hover {
