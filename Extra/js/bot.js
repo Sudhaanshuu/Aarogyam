@@ -50,7 +50,7 @@ function startSpeechRecognition() {
             case "hello.":
                 response = "Hello! How can I assist you today?";
                 break;
-            case "How are you?":
+            case "How are you.":
                 response = "I'm just a computer program, so I don't have feelings, but I'm here to help!";
                 break;
             case "what can you do":
