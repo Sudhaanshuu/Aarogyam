@@ -1,5 +1,5 @@
 const chatbot = document.getElementById("chatbot");
-const closeButton = document.getElementById("close-button");
+const toggleButton = document.getElementById("toggle-button");
 const sendButton = document.getElementById("send-button");
 const micButton = document.getElementById("mic-button");
 const userInputElement = document.getElementById("user-input");
@@ -102,7 +102,7 @@ function startSpeechRecognition() {
     recognition.start();
 }
 
-closeButton.addEventListener("click", toggleChatbot);
+toggleButton.addEventListener("click", toggleChatbotSize);
 micButton.addEventListener("click", startSpeechRecognition);
 
 sendButton.addEventListener("click", () => {

@@ -260,7 +260,7 @@ body {
 .bio-auth-image {
     width: 200px;
     height: auto;
-    animation: pulse 2s infinite;
+    /* animation: pulse 2s infinite; */
 }
 
 .bio-auth-instructions {
@@ -1015,7 +1015,7 @@ button[type="submit"] {
 }
 
 .image-section .row:nth-child(2) img:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 .image-section .row:first-child {
