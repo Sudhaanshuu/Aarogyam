@@ -161,7 +161,7 @@ body {
 
 #user-input {
     flex: 1;
-    padding: 5px;
+    padding: 5px 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     max-width: 70%;
@@ -175,6 +175,18 @@ body {
     border-radius: 5px;
     cursor: pointer;
     margin-left: 10px;
+    margin-top: -10px;
+}
+
+#mic-button {
+    background: #fe3f40;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: -10px;
 }
 
 .bot-icon {
@@ -530,14 +542,21 @@ section {
 
 /* Team members */
 
-.team .container {
-    width: 800px;
-    height: 300px;
+.team {
+    background: #fff;
+    /* padding: 60px 0; */
 }
 
-.team .member img {
-    max-width: 100%;
-    height: auto;
+.team .member {
+    text-align: center;
+    margin-bottom: 0px;
+    background: #343a40;
+    position: relative;
+    overflow: hidden;
+    /* min-width: 25rem;
+    min-height: 25rem;
+    max-width: 125rem;
+    max-height: 125rem; */
 }
 
 .team .member .member-info {
@@ -548,18 +567,6 @@ section {
     left: 0;
     right: 0;
     transition: 0.2s;
-}
-
-.team {
-    background: #fff;
-}
-
-.team .member {
-    text-align: center;
-    margin-bottom: 0px;
-    background: #343a40;
-    position: relative;
-    overflow: hidden;
 }
 
 .team .member .member-info-content {
