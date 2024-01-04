@@ -313,6 +313,18 @@ header
 --------------------------------------------- 
 */
 
+.header-sticky {
+    position: fixed!important;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+.header-sticky .main-nav {
+    padding: 15px 0;
+}
+
 .background-header {
     background-color: #fff!important;
     height: 80px!important;
