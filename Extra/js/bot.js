@@ -44,7 +44,7 @@ function startSpeechRecognition() {
         addUserMessage(spokenText);
 
         // Process the spoken text and generate a response
-        let response = "Hi, I'm Green Coders, an AI assistant.";
+        let response = "Hi, I'm Arogyam, an AI assistant.";
 
         switch (spokenText.toLowerCase()) {
             case "hello.":
@@ -70,7 +70,7 @@ function startSpeechRecognition() {
                 response = "I love you too.";
                 break;
             case "hi":
-                response = "Hi, I'm Green Coders, an AI assistant for Kiosk";
+                response = "Hi, I'm Arogyam , an AI assistant for Healthcare.";
                 break;
             case "नमस्ते":
                 response = "मैं अच्छा हूँ,तुम कैसे हो?";
@@ -111,7 +111,7 @@ sendButton.addEventListener("click", () => {
 
     addUserMessage(userMessage);
 
-    let response = "Hi, I'm Green Coders, an AI assistant.";
+    let response = "Hi, I'm Arogyam, an AI assistant.";
 
     switch (userMessage.toLowerCase()) {
         case "hello.":
@@ -136,7 +136,7 @@ sendButton.addEventListener("click", () => {
             response = "I love you too.";
             break;
         case "hi":
-            response = "Hi, I'm Green Coders, an AI assistant for Kiosk";
+            response = "Hi, I'm Arogyam, an AI assistant for Healthcare.";
             break;
         case "नमस्ते":
             response = "मैं अच्छा हूँ,तुम कैसे हो?";
