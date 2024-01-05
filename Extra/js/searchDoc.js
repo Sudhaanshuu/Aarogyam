@@ -9,12 +9,6 @@ function searchDoctors() {
             { name: "Doctor B", lat: 20.2, lng: 85.2 },
             { name: "Clinic C", lat: 20.3, lng: 85.3 }
         ];
-    } else if (cityInput.toLowerCase() === "mumbai") {
-        doctorLocations = [
-            { name: "Doctor X", lat: 19.1, lng: 72.1 },
-            { name: "Doctor Y", lat: 19.2, lng: 72.2 },
-            { name: "Clinic Z", lat: 19.3, lng: 72.3 }
-        ];
     } else if (cityInput.toLowerCase() === "chennai") {
         doctorLocations = [
             { name: "Doctor D", lat: 13.1, lng: 80.2 },
@@ -59,6 +53,13 @@ function searchDoctors() {
             { name: "Doctor S", lat: 23.1, lng: 72.5 },
             { name: "Doctor T", lat: 23.2, lng: 72.4 },
             { name: "Clinic U", lat: 23.3, lng: 72.6 }
+        ];
+    } else if (cityInput.toLowerCase() === "mumbai") {
+        doctorLocations = [
+            { name: "Doctor X", lat: 19.1, lng: 72.1 },
+            { name: "Doctor Y", lat: 19.2, lng: 72.2 },
+            { name: "Clinic Z", lat: 19.3, lng: 72.3 },
+            { name: "Hospital W", lat: 19.4, lng: 72.4 }
         ];
     } else if (cityInput.toLowerCase() === "jaipur") {
         doctorLocations = [
