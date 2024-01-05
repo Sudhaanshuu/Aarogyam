@@ -50,6 +50,15 @@ function startSpeechRecognition() {
             case "hello.":
                 response = "Hello! How can I assist you today?";
                 break;
+            case "hey, what's your name?":
+                response = "Hello!, I'm Healthcare chat-bot, build by Green Coders, How can i assist you today";
+                break;
+            case "what can you do for me?":
+                response = "I can do so many things related to healthcare";
+                break;
+            case "like what?":
+                response = "Like i can book appointment for you, i can perform basic health checkups, Disease prediction etc";
+                break;
             case "How are you.":
                 response = "I'm just a computer program, so I don't have feelings, but I'm here to help!";
                 break;
@@ -116,6 +125,9 @@ sendButton.addEventListener("click", () => {
     switch (userMessage.toLowerCase()) {
         case "hello.":
             response = "Hello! How can I assist you today?";
+            break;
+        case "what can you do for me?":
+            response = "I can do so many things related to healthcare";
             break;
         case "how are you":
             response = "I'm just a computer program, so I don't have feelings, but I'm here to help!";
