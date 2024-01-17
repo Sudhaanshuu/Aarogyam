@@ -44,10 +44,7 @@ Year: III
 Branch: Btech
 Stream: Computer Science and Engineering
 Year: III
-#### Team Member 2: Aniketa Das
-Branch: Btech
-Stream: Computer Science and Engineering
-Year: III
+
 #### Team Member 3: Aman Ujwal Toppo
 Branch: Btech
 Stream: Computer Science and Engineering
