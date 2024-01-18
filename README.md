@@ -39,16 +39,16 @@ The AI-Assisted Tele-medicine Kiosk for Rural India is a innovative solution des
 ### Team Leader: Sudhanshu Kumar
 Branch: Btech
 Stream: Computer Science and Engineering
-Year: III
+Year: IIIth
 #### Team Member 1: Ankur Kumari
 Branch: Btech
 Stream: Computer Science and Engineering
-Year: III
+Year: IIIth
 
 #### Team Member 3: Aman Ujwal Toppo
 Branch: Btech
 Stream: Computer Science and Engineering
-Year: III
+Year: IIIth
 ## License and Copyright
 
 Please refer to the provided license and copyright notice for further information.
